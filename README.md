@@ -12,6 +12,8 @@
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/36162640/160282710-8a246001-b288-4c10-9d21-bbc5aef32c65.png">
 
+<img width="1433" alt="image" src="https://user-images.githubusercontent.com/36162640/160284742-3608a544-fdc0-41e5-8dc7-d62727937178.png">
+
 
 ## Dataset sources
 Clinical Trials data are from [ClinicalTrials.gov](https://clinicaltrials.gov/ct2/results?cond=&term=small+molecule&cntry=&state=&city=&dist=&Search=Search&recrs=e). Small molecule drugs data are from [DrugBank](https://go.drugbank.com/releases/latest). Molecular similarity calculations are done by [RDKit](https://www.rdkit.org/docs/GettingStartedInPython.html).
