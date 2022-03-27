@@ -2,11 +2,11 @@
 ### Provide pharmaceutical researchers with the most up-to-date clinical trial information through molecular fingerprint similarity calculation.
 
 ## Usage instruction:
-Open app.R in RStudio and click "Run App".
+1. Open app.R in RStudio and click "Run App".
 
 <img width="186" alt="image" src="https://user-images.githubusercontent.com/36162640/160281564-05f6ee33-5389-4de5-ad53-84bc9e86dc97.png">
 
-Enter the SMILES of your drug of interest on the left and set a similarity threshold. A list of clinical trials on drugs of higher molecular similarity than the threshold will show up on the right.
+2. Enter the SMILES of your drug of interest on the left and set a similarity threshold. A list of clinical trials on drugs of higher molecular similarity than the threshold will show up on the right.
 
 <img width="1438" alt="image" src="https://user-images.githubusercontent.com/36162640/160282479-043dce27-df1f-4c56-bf5a-f21e0ecfd6ec.png">
 

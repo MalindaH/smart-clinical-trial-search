@@ -37,9 +37,9 @@ shinyApp(
                               )
                             )),
                    tabPanel("About",
-                            p("This is a smart clinical search engine for the clinical trial information of your drug of interest, based on molecular similarity between your input and drugs in the government clinical trial database\n", 
+                            p("This is a smart clinical search engine for the clinical trial information of your drug of interest, based on molecular similarity between your input and drugs in the government clinical trial database\n"), 
                               hr(),
-                              "We collect clinical trial data from various databases, including",
+                              p("We collect clinical trial data from various databases, including",
                               a("ClinicalTrials.gov", href="https://clinicaltrials.gov/ct2/results?cond=&term=small+molecule&cntry=&state=&city=&dist=&Search=Search&recrs=e", target="_blank"),
                               "from US NIH, identify the small molecules used in clinical trials, and retrieve SMILES of the small molecules from ",
                               a("DrugBank", href="https://go.drugbank.com/releases/latest", target="_blank"), 
@@ -56,7 +56,9 @@ shinyApp(
                        p(a("Mingyang Ma", href="https://github.com/Anthonyma0706", target="_blank"),style = "font-size:25px"),
                        p("e-mail: mingyang.ma@mail.mcgill.ca",style = "font-size:20px"),
                        p(a("Meihan Liu", href="", target="_blank"),style = "font-size:25px"),
-                       p("e-mail: mollyliu0201@gmail.com",style = "font-size:20px"))
+                       p("e-mail: mollyliu0201@gmail.com",style = "font-size:20px"),
+                       hr(),
+                       p("Developed in PharmaHacks 2022"))
                    ),
   
   server = function(input, output) {
