@@ -43,5 +43,5 @@ Clinical Trials data are from [ClinicalTrials.gov](https://clinicaltrials.gov/ct
 - reticulate 4.1.1
 - DT 4.1.1
 
-Developed by Malinda Huang, Mingyang Ma, and Meihan Liu at PharmaHacks 2022.
+Developed by Malinda Huang, Mingyang Ma, and Meihan Liu at [PharmaHacks 2022](https://devpost.com/software/smart-clinical-trial-search-for-small-molecule-drugs).
 
