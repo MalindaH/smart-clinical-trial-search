@@ -22,7 +22,7 @@ Clinical Trials data are from [ClinicalTrials.gov](https://clinicaltrials.gov/ct
 
 
 ## To build the app using other datasets:
-- Run [datasets_preprocessing.ipynb](https://github.com/MalindaH/smart-clinical-trial-search/blob/master/datasets_preprocessing.ipynb) to clean and merge the datasets.
+- Run [datasets_preprocessing.ipynb](https://github.com/MalindaH/smart-clinical-trial-search/blob/master/datasets_preprocessing.ipynb) to process, clean, and merge the datasets.
 
 
 ### Build environment:
