@@ -1,6 +1,6 @@
 # Smart Clinical Trial Search for Small Molecule Drugs
 ### Provide pharmaceutical researchers with the most up-to-date clinical trial information through molecular fingerprint similarity calculation.
-
+This is the first app to search based on [SMILES](https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system) molecular similarity
 ## Usage instruction:
 1. Open app.R in RStudio and click "Run App".
 
