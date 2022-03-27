@@ -14,13 +14,15 @@
 
 
 ## Dataset sources
+Clinical Trials data are from [ClinicalTrials.gov](https://clinicaltrials.gov/ct2/results?cond=&term=small+molecule&cntry=&state=&city=&dist=&Search=Search&recrs=e). Small molecule drugs data are from [DrugBank](https://go.drugbank.com/releases/latest). Molecular similarity calculations are done by [RDKit](https://www.rdkit.org/docs/GettingStartedInPython.html).
 
 
+## To build the app using other datasets:
+- Run [datasets_preprocessing.ipynb](https://github.com/MalindaH/smart-clinical-trial-search/blob/master/datasets_preprocessing.ipynb) to clean and merge the datasets.
 
 
-
-
-
+### Build environment:
+- Google Colab
 - Python 3.9.7
 - R 4.1.1
 - numpy 1.22.3

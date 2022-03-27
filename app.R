@@ -37,28 +37,27 @@ shinyApp(
                               )
                             )),
                    tabPanel("About",
-                            p("This is a smart clinical search engine for the clinical trial information of your drug of interest, based on molecular similarity between your input and drugs in the government clinical trial database\n"), 
+                            tags$div(p("This is a smart clinical search engine for the clinical trial information of your drug of interest, based on molecular similarity between your input and drugs in the government clinical trial database\n",style = "font-size:20px"), 
                               hr(),
                               p("We collect clinical trial data from various databases, including",
                               a("ClinicalTrials.gov", href="https://clinicaltrials.gov/ct2/results?cond=&term=small+molecule&cntry=&state=&city=&dist=&Search=Search&recrs=e", target="_blank"),
                               "from US NIH, identify the small molecules used in clinical trials, and retrieve SMILES of the small molecules from ",
                               a("DrugBank", href="https://go.drugbank.com/releases/latest", target="_blank"), 
-                              "for molecular fingerprint similarity calculation.",style = "font-size:18px"),
-                              hr(),
+                              "for molecular fingerprint similarity calculation.",style = "font-size:16px"),
                               p("Our molecular similarity calculation is powered by ",
                               a("RDKit", href="https://www.rdkit.org/docs/GettingStartedInPython.html", target="_blank"),
-                              " . Only trial information with similar drugs are shown",
-                              ".",style = "font-size:18px")
+                              " . Only clinical trial information with similar drugs are shown.",style = "font-size:16px"),
+                              a("GitHub link",href="https://github.com/MalindaH/smart-clinical-trial-search"), style = "margin: auto, width: 80%")
                    ),
                   tabPanel("Authors",
-                       p(a("Malinda Huang", href="https://github.com/MalindaH", target="_blank"),style = "font-size:25px"),
+                       tags$div(p(a("Malinda Huang", href="https://github.com/MalindaH", target="_blank"),style = "font-size:25px"),
                        p("e-mail: malindahuanglh@gmail.com",style = "font-size:20px"),
                        p(a("Mingyang Ma", href="https://github.com/Anthonyma0706", target="_blank"),style = "font-size:25px"),
                        p("e-mail: mingyang.ma@mail.mcgill.ca",style = "font-size:20px"),
                        p(a("Meihan Liu", href="", target="_blank"),style = "font-size:25px"),
                        p("e-mail: mollyliu0201@gmail.com",style = "font-size:20px"),
                        hr(),
-                       p("Developed in PharmaHacks 2022"))
+                       p("Developed in PharmaHacks 2022"), style = "margin:auto, width:80%"))
                    ),
   
   server = function(input, output) {
@@ -68,13 +67,13 @@ shinyApp(
     
     output$tbl <- DT::renderDataTable(
       DT::datatable(
-        update_data(), options = list(
+        update_data(), rownames = FALSE, options = list(
           order = list(1, 'desc'),
           autoWidth = TRUE,
           columnDefs = list(
-            list(targets=c(2), visible=TRUE, width='400'),
-            list(targets=c(6), visible=TRUE, width='100'),
-            list(targets=c(11), visible=TRUE, width='200'),
+            list(targets=c(1), visible=TRUE, width='400'),
+            list(targets=c(5), visible=TRUE, width='100'),
+            list(targets=c(10), visible=TRUE, width='200'),
             list(targets='_all', visible=TRUE)
             ),
           pageLength = 6,
