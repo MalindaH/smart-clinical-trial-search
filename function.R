@@ -60,7 +60,7 @@ get_df_to_display <- function(input_smiles, cutoff) {
   df_to_display = df_to_display[,2:dim(df_to_display)[2]]
   rownames(df_to_display) <- NULL
   df_to_display <- cbind(Similarity = similarity_values, df_to_display)
-  df_to_display1 <- df_to_display[c("Similarity","Title","Interventions","Status","Conditions","SMILES","DrugBank ID","NCT Number","Phases","Gender","Age","URL")]
+  df_to_display1 <- df_to_display[c("Similarity","Title","Interventions","Status","Conditions","Similar Drug","SMILES","DrugBank ID","NCT Number","Phases","Gender","Age","URL")]
   return(df_to_display1)
 }
 

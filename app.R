@@ -75,8 +75,8 @@ shinyApp(
           autoWidth = TRUE,
           columnDefs = list(
             list(targets=c(1), visible=TRUE, width='400'),
-            list(targets=c(5), visible=TRUE, width='100'),
-            list(targets=c(10), visible=TRUE, width='200'),
+            list(targets=c(6), visible=TRUE, width='100'),
+            list(targets=c(11), visible=TRUE, width='200'),
             list(targets='_all', visible=TRUE)
             ),
           pageLength = 6,
