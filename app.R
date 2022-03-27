@@ -61,7 +61,7 @@ shinyApp(
                        p("e-mail: mollyliu0201@gmail.com",style = "font-size:20px"),
                        hr(),
                        a("GitHub link",href="https://github.com/MalindaH/smart-clinical-trial-search",style = "font-size:20px"),
-                       p("Developed in PharmaHacks 2022"), style = "padding: 0 100px 0 100px; text-align: center;"))
+                       p("Developed in PharmaHacks 2022, ", a("link", href="https://devpost.com/software/smart-clinical-trial-search-for-small-molecule-drugs")), style = "padding: 0 100px 0 100px; text-align: center;"))
                    ),
   
   server = function(input, output) {
