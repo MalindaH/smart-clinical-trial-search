@@ -1,5 +1,5 @@
-library(reticulate)
 library(shiny)
+library(reticulate)
 
 if(!"r-reticulate" %in% conda_list()$name){
   conda_create("r-reticulate")

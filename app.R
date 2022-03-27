@@ -1,7 +1,4 @@
 library(shiny)
-library(DT)
-library(reticulate)
-library(shiny)
 library(shinythemes)
 
 source("function.R")
@@ -21,7 +18,7 @@ pandas <- import('pandas')
 
 shinyApp(
   ui <- navbarPage("Smart Clinical Trial Search for Small Molecule Drugs",
-                   tabPanel("Graphic",fluidPage(theme = shinytheme("flatly")),
+                   tabPanel("Query",fluidPage(theme = shinytheme("flatly")),
                             tags$head(
                               tags$style(HTML(".shiny-output-error-validation{color: red;}"))),
                             sidebarLayout(
