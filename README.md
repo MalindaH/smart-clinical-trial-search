@@ -37,6 +37,7 @@ Clinical Trials data are from [ClinicalTrials.gov](https://clinicaltrials.gov/ct
 - shiny 4.1.1
 - shinythemes 4.1.0
 - reticulate 4.1.1
+- DT 4.1.1
 
 Developed by Malinda Huang, Mingyang Ma, and Meihan Liu at PharmaHacks 2022.
 
