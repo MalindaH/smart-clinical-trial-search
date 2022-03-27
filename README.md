@@ -18,6 +18,10 @@ This is the first ever app for clinical trial search based on [SMILES](https://e
 
 <img width="1439" alt="image" src="https://user-images.githubusercontent.com/36162640/160285810-437566be-c0fc-4c19-93b0-8f4c9b09506e.png">
 
+## Project architecture
+
+![Smart_clinicalTrials_PharmaHacks (2)](https://user-images.githubusercontent.com/36162640/160288310-fad4d619-32a3-43f4-9d09-341cab703c84.png)
+
 
 ## Dataset sources
 Clinical Trials data are from [ClinicalTrials.gov](https://clinicaltrials.gov/ct2/results?cond=&term=small+molecule&cntry=&state=&city=&dist=&Search=Search&recrs=e). Small molecule drugs data are from [DrugBank](https://go.drugbank.com/releases/latest). Molecular similarity calculations are done by [RDKit](https://www.rdkit.org/docs/GettingStartedInPython.html).
