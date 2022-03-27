@@ -17,7 +17,6 @@ smiles_l <- df_smiles$'SMILES'
 
 
 get_df_to_display <- function(input_smiles, cutoff) {
-  # input_smiles <- toupper(input_smiles)
   empty_df <- data.frame(matrix(ncol = 12, nrow = 0))
   colnames(empty_df) <- c("Similarity","Title","Interventions","Status","Conditions","SMILES","DrugBank ID","NCT Number","Phases","Gender","Age","URL")
   tryCatch(
@@ -56,16 +55,6 @@ get_df_to_display <- function(input_smiles, cutoff) {
   df_to_display = df_to_display[,2:dim(df_to_display)[2]]
   rownames(df_to_display) <- NULL
   df_to_display <- cbind(Similarity = similarity_values, df_to_display)
-  # print(colnames(df_smiles))
-  # print(colnames(df_to_display))
   df_to_display1 <- df_to_display[c("Similarity","Title","Interventions","Status","Conditions","SMILES","DrugBank ID","NCT Number","Phases","Gender","Age","URL")]
   return(df_to_display1)
 }
-
-# df_to_display <- get_df_to_display('COC1=C(OCCCN2CCOCC2)C=C2C(NC3=CC(Cl)=C(F)C=C3)=NC=NC2=C1',0.7)
-# df_to_display <- get_df_to_display('CCC',0.5)
-
-
-
-
-

@@ -25,7 +25,6 @@ shinyApp(
                             tags$head(
                               tags$style(HTML(".shiny-output-error-validation{color: red;}"))),
                             sidebarLayout(
-                              # headerPanel('Search for Clinical Trial Search by SMILES Similarity Score'),
                               sidebarPanel(
                                 p("Compare the molecular fingerprint similarity to give you the most up-to-date clinical trial information."),
                                 hr(), 
@@ -37,10 +36,6 @@ shinyApp(
                                 width=3
                                 ),
                               mainPanel(
-                                # textInput("drugname", "SMILES of Drug of Interest", "COC1=C(OCCCN2CCOCC2)C=C2C(NC3=CC(Cl)=C(F)C=C3)=NC=NC2=C1"),
-                                # verbatimTextOutput("value"),
-                                # textInput("threshold", "Similarity Threshold",0.6),
-                                # sliderInput("threshold", label="Similarity Threshold",min = 0, value = 0.7, max = 1),
                                 div(DT::dataTableOutput("tbl"), style = "font-size: 100%; width: 110%")
                               )
                             )),
@@ -58,16 +53,6 @@ shinyApp(
                               " . Only trial information with similar drugs are shown",
                               ".",style = "font-size:18px")
                    ),
-                   # p("We used a data set consisting of 39 attributes from 11,158 players registered
-                   #        in Pro Evolution Soccer 2019 (PES 2019), an electronic soccer game. The data set
-                   #        was obtained from ", a("PES Data Base", href="http://pesdb.net/", target="_blank")),
-                   #          hr(), 
-                   #          p("The available player positions are:",style = "font-size:25px"),
-                   #          # p("GK: Goalkeeper",style = "font-size:15px;color: blue"),
-                   #          hr(), 
-                   #          p("The abbreviations used in the radar chart are:",style = "font-size:25px"),
-                   #          p("BAL: Unwavering Balance",style = "font-size:15px;color: blue")
-                   # ),
                   tabPanel("Authors",
                        p(a("Malinda Huang", href="https://github.com/MalindaH", target="_blank"),style = "font-size:25px"),
                        p("e-mail: malindahuanglh@gmail.com",style = "font-size:20px"),
