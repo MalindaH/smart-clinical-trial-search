@@ -44,7 +44,7 @@ get_df_to_display <- function(input_smiles, cutoff) {
       expr = {
         fp <- fps[[i]]
         similarity = rdkit$DataStructs$FingerprintSimilarity(fp_input,fp)
-        if(similarity > cutoff){
+        if(similarity >= cutoff){
           inds_l = append(inds_l,i)
           similarity_values = append(similarity_values,similarity)
         }
