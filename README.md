@@ -6,13 +6,15 @@
 
 <img width="186" alt="image" src="https://user-images.githubusercontent.com/36162640/160281564-05f6ee33-5389-4de5-ad53-84bc9e86dc97.png">
 
-2. Enter the SMILES of your drug of interest on the left and set a similarity threshold. A list of clinical trials on drugs of higher molecular similarity than the threshold will show up on the right.
+2. Enter the SMILES of your drug of interest on the left and set a similarity threshold. Info of a list of clinical trials on drugs of higher molecular similarity than the threshold will show up on the right.
 
-<img width="1438" alt="image" src="https://user-images.githubusercontent.com/36162640/160282479-043dce27-df1f-4c56-bf5a-f21e0ecfd6ec.png">
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/36162640/160285836-278d7684-0ae1-4602-bc0f-8d8781854b95.png">
 
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/36162640/160282710-8a246001-b288-4c10-9d21-bbc5aef32c65.png">
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/36162640/160285857-bce2c07e-6648-4480-af63-f16b3b4a3da1.png">
 
-<img width="1433" alt="image" src="https://user-images.githubusercontent.com/36162640/160284742-3608a544-fdc0-41e5-8dc7-d62727937178.png">
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/36162640/160285866-0c30cb44-e78a-4360-a51e-e7f8e6cb9c7d.png">
+
+<img width="1439" alt="image" src="https://user-images.githubusercontent.com/36162640/160285810-437566be-c0fc-4c19-93b0-8f4c9b09506e.png">
 
 
 ## Dataset sources
