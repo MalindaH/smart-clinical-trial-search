@@ -12,9 +12,16 @@ rdkit <- import('rdkit')
 numpy <- import('numpy')
 pandas <- import('pandas')
 
-df_smiles <- pandas$read_csv('data/df_ct_completed_valid.csv')
+# df_smiles <- pandas$read_csv('data/df_ct_completed_valid.csv')
+df_smiles <- pandas$read_csv('data/df_ct_all_valid.csv')
 smiles_l <- df_smiles$'SMILES'
-
+fps <- list()
+for(i in 1:length(smiles_l)){
+  smi = smiles_l[i]
+  m = rdkit$Chem$MolFromSmiles(smi)
+  fp = rdkit$Chem$RDKFingerprint(m)
+  fps = append(fps, fp)
+}
 
 get_df_to_display <- function(input_smiles, cutoff) {
   empty_df <- data.frame(matrix(ncol = 12, nrow = 0))
@@ -31,13 +38,11 @@ get_df_to_display <- function(input_smiles, cutoff) {
   
   inds_l <- c()
   similarity_values <- c()
-  for(i in 1:length(smiles_l)){
+  for(i in 1:length(fps)){
     flag <- TRUE
-    smi = smiles_l[i]
     tryCatch(
       expr = {
-        m = rdkit$Chem$MolFromSmiles(smi)
-        fp = rdkit$Chem$RDKFingerprint(m)
+        fp <- fps[[i]]
         similarity = rdkit$DataStructs$FingerprintSimilarity(fp_input,fp)
         if(similarity > cutoff){
           inds_l = append(inds_l,i)
@@ -58,3 +63,4 @@ get_df_to_display <- function(input_smiles, cutoff) {
   df_to_display1 <- df_to_display[c("Similarity","Title","Interventions","Status","Conditions","SMILES","DrugBank ID","NCT Number","Phases","Gender","Age","URL")]
   return(df_to_display1)
 }
+
