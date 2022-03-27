@@ -1,5 +1,6 @@
 library(shiny)
 library(shinythemes)
+library(DT)
 
 source("function.R")
 
@@ -37,7 +38,7 @@ shinyApp(
                               )
                             )),
                    tabPanel("About",
-                            div(p("This is a smart clinical search engine for the clinical trial information of your drug of interest, based on molecular similarity between your input and drugs in the government clinical trial database\n",style = "font-size:20px"), 
+                            div(p("This smart clinical search engine searches for relevant clinical trial information of your drug of interest, based on SMILES molecular similarity between your input and drugs in government clinical trial databases.\n",style = "font-size:20px"), 
                               hr(),
                               p("We collect clinical trial data from various databases, including",
                               a("ClinicalTrials.gov", href="https://clinicaltrials.gov/ct2/results?cond=&term=small+molecule&cntry=&state=&city=&dist=&Search=Search&recrs=e", target="_blank"),
