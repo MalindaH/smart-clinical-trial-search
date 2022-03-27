@@ -20,7 +20,7 @@ This is the first ever app for clinical trial search based on [SMILES](https://e
 
 ## Project architecture
 
-![Smart_clinicalTrials_PharmaHacks (2)](https://user-images.githubusercontent.com/36162640/160288310-fad4d619-32a3-43f4-9d09-341cab703c84.png)
+<img width="1440" alt="architecture" src="https://user-images.githubusercontent.com/36162640/160288597-90b28690-b998-46cf-bc43-2c6cf6e6ead5.png">
 
 
 ## Dataset sources
